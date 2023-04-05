@@ -27,6 +27,7 @@ open class CountryPickerWithSectionViewController: CountryPickerController {
         fetchSectionCountries()
         tableView.dataSource = self
         tableView.delegate = self
+        tableView.keyboardDismissMode = .onDrag
     }
 
     open override func viewDidAppear(_ animated: Bool) {
