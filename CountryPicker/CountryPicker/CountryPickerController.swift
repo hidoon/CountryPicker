@@ -297,7 +297,7 @@ extension CountryPickerController: UITableViewDelegate, UITableViewDataSource {
         
         if applySearch {
             selectedCountry = filterCountries[indexPath.row]
-            dismissWithAnimation = false
+            dismissWithAnimation = true
         }
         
         onSelectCountry?(selectedCountry)
