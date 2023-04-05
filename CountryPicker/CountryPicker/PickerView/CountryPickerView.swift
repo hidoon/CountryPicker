@@ -69,7 +69,7 @@ open class CountryPickerView: UIPickerView {
     
     open override func layoutSubviews() {
         super.layoutSubviews()
-        self.scrollToSelectedCountry()
+//         self.scrollToSelectedCountry()
     }
     
     // MARK: - Public API
