@@ -61,6 +61,7 @@ open class CountryPickerController: UIViewController {
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.contentInsetAdjustmentBehavior = .never
+        tableView.keyboardDismissMode = .onDrag
         tableView.delegate = self
         tableView.dataSource = self
         tableView.separatorStyle = .none
