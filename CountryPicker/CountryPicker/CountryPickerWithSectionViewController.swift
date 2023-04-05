@@ -213,7 +213,6 @@ extension CountryPickerWithSectionViewController {
         switch applySearch {
         case true:
             let country = filterCountries[indexPath.row]
-            applySearch = false
             triggerCallbackAndDismiss(with: country)
         case false:
             var country: Country?
