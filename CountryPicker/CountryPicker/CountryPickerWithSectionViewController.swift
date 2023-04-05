@@ -209,6 +209,7 @@ extension CountryPickerWithSectionViewController {
 // MARK: - TableViewDelegate
 extension CountryPickerWithSectionViewController {
     override public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
         switch applySearch {
         case true:
             let country = filterCountries[indexPath.row]
