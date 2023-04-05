@@ -30,8 +30,8 @@ open class CountryPickerWithSectionViewController: CountryPickerController {
     }
 
     open override func viewDidAppear(_ animated: Bool) {
-        navigationItem.hidesSearchBarWhenScrolling = true
-        scrollToPreviousCountryIfNeeded()
+//         navigationItem.hidesSearchBarWhenScrolling = true
+//         scrollToPreviousCountryIfNeeded()
     }
     
     internal func scrollToPreviousCountryIfNeeded() {
