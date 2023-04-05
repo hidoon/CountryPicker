@@ -50,7 +50,7 @@ open class CountryPickerController: UIViewController {
     //MARK: View and ViewController
     internal lazy var searchController: UISearchController = {
         let searchController = UISearchController(searchResultsController: nil)
-        searchController.hidesNavigationBarDuringPresentation = true
+        searchController.hidesNavigationBarDuringPresentation = false
         searchController.searchBar.barStyle = .default
         searchController.searchBar.sizeToFit()
         searchController.searchBar.delegate = self
@@ -158,7 +158,7 @@ open class CountryPickerController: UIViewController {
     
     override open func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        navigationItem.hidesSearchBarWhenScrolling = true
+        navigationItem.hidesSearchBarWhenScrolling = false
         
         /// Request for previous country and automatically scroll table view to item
         if let previousCountry = manager.lastCountrySelected {
