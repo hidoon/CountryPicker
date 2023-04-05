@@ -240,6 +240,7 @@ extension CountryPickerWithSectionViewController {
         onSelectCountry?(country)
         manager.lastCountrySelected = country
         self.dismiss(animated: true, completion: nil)
+        navigationController?.popViewController(animated: true)
     }
 }
 
