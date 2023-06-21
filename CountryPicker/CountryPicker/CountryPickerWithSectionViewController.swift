@@ -34,6 +34,11 @@ open class CountryPickerWithSectionViewController: CountryPickerController {
 //         navigationItem.hidesSearchBarWhenScrolling = true
 //         scrollToPreviousCountryIfNeeded()
     }
+
+    deinit {
+        tableView.dataSource = nil
+        tableView.delegate = nil
+    }
     
     internal func scrollToPreviousCountryIfNeeded() {
         /// Request for previous country and automatically scroll table view to item
