@@ -57,6 +57,10 @@ open class Country {
         countryName = mapCountryName(self.countryCode)
         imagePath = "CountryPickerController.bundle/\(self.countryCode)"
     }
+    
+    deinit {
+        image = nil    
+    }
 
     func countryName(with locale: Locale) -> String {
         guard let localisedCountryName = locale.localizedString(forRegionCode: self.countryCode) else {
