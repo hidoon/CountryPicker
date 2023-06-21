@@ -120,6 +120,11 @@ open class CountryPickerController: UIViewController {
     required public init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+
+    deinit {
+        tableView.delegate = nil
+        tableView.dataSource = nil
+    }
     
     // MARK: - View life cycle
     private func setUpsSearchController() {
