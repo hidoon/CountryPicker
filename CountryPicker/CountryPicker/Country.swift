@@ -60,7 +60,6 @@ open class Country {
     
     deinit {
         image = nil  
-        flag = nil
     }
 
     func countryName(with locale: Locale) -> String {
