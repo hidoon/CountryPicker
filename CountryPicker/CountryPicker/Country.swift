@@ -59,7 +59,8 @@ open class Country {
     }
     
     deinit {
-        image = nil    
+        image = nil  
+        flag = nil
     }
 
     func countryName(with locale: Locale) -> String {
