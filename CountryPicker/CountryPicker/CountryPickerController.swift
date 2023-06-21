@@ -122,6 +122,8 @@ open class CountryPickerController: UIViewController {
     }
 
     deinit {
+        self.manager = nil
+        self.engine = nil
         tableView.delegate = nil
         tableView.dataSource = nil
     }
